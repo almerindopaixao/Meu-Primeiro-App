@@ -1,10 +1,12 @@
 import React from 'react';
-import PlayerScreen from './screens/Player';
+import { NavigationContainer } from '@react-navigation/native';
+
+import MyTabs from './routes/MyTabs';
 
 export default function App() {
   return (
-    <>
-      <PlayerScreen />
-    </>
+    <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
   );
 }
